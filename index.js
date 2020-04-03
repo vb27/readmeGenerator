@@ -29,14 +29,14 @@ inquirer
         {
             type: "list",
             message: "What licenses were used?",
-            choices: ["MIT", "GPL v3", "AGPL"],
+            choices: ["MIT", "GPL v3", "AGPL", "None"],
             name: "licenses"
         },
-        {
-            type: "input",
-            message: "Who else contributed to this project?",
-            name: "contributors"
-        },
+        // {
+        //     type: "input",
+        //     message: "Who else contributed to this project?",
+        //     name: "contributors"
+        // },
         {
             type: "input",
             message: "How do you test the file?",
@@ -58,7 +58,7 @@ inquirer
         let install = userInput.install
         let usage = userInput.usage
         let licenses = userInput.licenses
-        let contributors = userInput.contributors
+        // let contributors = userInput.contributors
         let tests = userInput.tests
         let githubName = userInput.gitHubName
         let email = userInput.email
@@ -69,6 +69,8 @@ inquirer
             licenses = "[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)"
         } else if (licenses === "AGPL"){
             licenses = "[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)"
+        } else if (licenses === "None"){
+            licenses === "No licenses used"
         }
 
         const githubURL = `https://api.github.com/users/${githubName}`
@@ -80,6 +82,8 @@ inquirer
                 name = response.data.name
 const readmeFile =
 `# ${projectName}
+
+![repoLanguage](https://img.shields.io/github/languages/top/${githubName}/${projectName})
 
 ## Descripton
 ${descripton}

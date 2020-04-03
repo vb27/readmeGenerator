@@ -1,7 +1,9 @@
-# test
+# readmegenerator
+
+![repoLanguage](https://img.shields.io/github/languages/top/vb27/readmegenerator)
 
 ## Descripton
-test
+Allows the user to write a README file through the terminal.
                         
 ## Table of Contents
                         
@@ -11,16 +13,16 @@ test
 * [Tests](#tests)
                         
 ## Installation
-test
+To install you will need to `npm init`. Then `npm install` to get both inquirer and axios.
                         
 ## Usage
-test
+Allows the user to make a README file without writing the whole thing and giving a template.
                         
 ## License
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+None
                 
 ## Tests
-test
+You can't
                 
 ## Contact
 ![profile image](https://avatars3.githubusercontent.com/u/61212387?v=4)
@@ -29,5 +31,5 @@ Paul Lee
 <br/>
 [GitHub Page](https://github.com/vb27)
 <br/>
-something@email.com
+vampblood87@gmail.com
                 
