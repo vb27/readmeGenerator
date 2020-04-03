@@ -116,8 +116,7 @@ ${name}
 <br/>
 [GitHub Page](${link})
 <br/>
-${email}
-                `
+${email}`
                         
                         fs.writeFile(`New_README/README.md`, readmeFile,err=>{
                             if(err){
