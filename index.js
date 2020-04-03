@@ -80,10 +80,12 @@ inquirer
                 image = response.data.avatar_url
                 link = response.data.html_url
                 name = response.data.name
+
+                let noSpace = projectName.replace(/\s/g, '')
 const readmeFile =
 `# ${projectName}
 
-![repoLanguage](https://img.shields.io/github/languages/top/${githubName}/${projectName})
+![repoLanguage](https://img.shields.io/github/languages/top/${githubName}/${noSpace})
 
 ## Descripton
 ${descripton}
@@ -117,7 +119,7 @@ ${name}
 ${email}
                 `
                         
-                        fs.writeFile(`READ.md`, readmeFile,err=>{
+                        fs.writeFile(`New_README/README.md`, readmeFile,err=>{
                             if(err){
                                 return console.log(err)
                             }
