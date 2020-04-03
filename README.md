@@ -20,11 +20,13 @@ To install you will need to `npm init` to get a package.json file. Then `npm ins
 ![install](./images/install.PNG)
                         
 ## Usage
-Allows the user to make a README file without writing the whole thing and giving a template. To access You need to go into the terminal and type "node index.js" once you enter that in you will get prompted for information.
+Allows the user to make a README file without writing the whole thing and giving a template. To access You need to go into the terminal and type "node index.js" once you enter that in you will get prompted for information. Once you finish all of the prompts you will get a new README.md in the New_README folder.
 
 ![node](./images/node.PNG)
 <br/>
 ![input](./images/input.PNG)
+<br/>
+![newReadMe](./images/newreadme.PNG)
                         
 ## License
 None
